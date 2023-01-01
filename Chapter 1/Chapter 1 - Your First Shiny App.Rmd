@@ -1,0 +1,33 @@
+# Chapter 1: Your First Shiny App
+
+## Intro
+
+```{r}
+install.packages("shiny")
+packageVersion("shiny") #this is to check Shiny app version
+library(shiny)
+```
+
+## Create App Directory and File
+
+-   Usually, we create a app.R file and work in there.
+
+-   To add the boilerplate, use the snippet "shinyapp" or using a new project shiny app template from menu
+
+## Running and Stopping
+
+-   You can take the url from "Listening" and open it in a web browser.
+
+-   While Shiny is running, you cannot use R.
+
+-   If you edit the app code, you don't need to stop it and rerun it again. You can use the "Reload app" button or Ctrl Shift Enter
+
+## Adding UI Controls
+
+## Adding Behavior
+
+## Reducing Duplication with Reactive Expressions
+
+## Summary
+
+## Exercises
