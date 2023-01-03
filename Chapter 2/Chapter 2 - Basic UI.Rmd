@@ -1,0 +1,91 @@
+# Chapter 2: Basic UI
+
+## Introduction
+
+Shiny encourages the separation of the code that generates your user interface (frontend) from the codes that drives the app's behavior (backend).
+
+Many extension packages: shinyWidgets, colourpicker, sortable.
+
+Nao Xiao maintains a list.
+
+## Inputs
+
+`sliderInput()`
+
+`selectInput()`
+
+`textInput()`
+
+`numericInput()`
+
+### Common Structure
+
+-   `inputId`: unique and valid
+
+-   `label`: for users
+
+-   `value`: default value
+
+### Free Text
+
+-   `textInput()`
+
+-   `passwordInput()`
+
+-   `textAreaInput()`
+
+### Numeric Inputs
+
+-   `numericInput()`
+
+-   `sliderInput()`
+
+### Dates
+
+-   `dateInput()`
+
+-   `dateRangeInput()`
+
+-   You can use the arguments `datesdisabled` and `daysofweekdisabled` to restrict range.
+
+-   If you are creating an app with an international audience, set `format`, `language`, and `weekstart` so that the dates are natural to your users.
+
+### Limited Choices
+
+-   `selectInput()`
+
+-   `radioButtons()`
+
+-   For radio buttons: `choiceNames` determines what is shown to the user; `choiceValues` determines what is returned in your server function.
+
+-   `checkboxGroupInput()`
+
+-   `checkboxInput()`
+
+### File Uploads
+
+-   `fileInput()`
+
+### Action Buttons
+
+-   `actionButton()`
+
+-   `actionLink()`
+
+-   Actions links and buttons are most naturally paired with `observeEvent()` or `eventReactive()` in your server function.
+
+-   You can customise the appearance using the `class` argument by using one of `"btn-primary"`, `"btn-success"`, `"btn-info"`, `"btn-warning"`, or `"btn-danger"`. You can also change the size with `"btn-lg"`, `"btn-sm"`, `"btn-xs"`. Finally, you can make buttons span the entire width of the element they are embedded within using `"btn-block"`.
+
+### Exercises
+
+## Outputs
+
+### Text
+
+### Tables
+
+### Downloads
+
+### Exercises
+
+## Summary
