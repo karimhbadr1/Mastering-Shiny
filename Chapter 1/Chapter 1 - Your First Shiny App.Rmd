@@ -24,10 +24,36 @@ library(shiny)
 
 ## Adding UI Controls
 
+`fluidPage()` is a layout function.
+
+`selectInput()` is an input control.
+
+`verbatimTextOutput()` and `tableOutput()` are output controls.
+
+All the above are fancy ways of generating HTML functions.
+
 ## Adding Behavior
+
+We bring the outputs to lie by defining them in the **server** function.
+
+Shiny uses reactive programming, which involves telling Shiny how to perform a computation rather than ordering to actually go do it.
+
+`output$ID` indicates that you are providing the recipe for the Shiny output with that ID.
+
+Each `render{Type}` function is t designed to a produce a particular type of output and is often paired with a `{Type}Output` function.
+
+The essence of reactivity: outputs automatically react (recalculate) when their inputs change.
 
 ## Reducing Duplication with Reactive Expressions
 
+In traditional R scripting, we use two techniques to deal with duplicated code: either we capture the value using a variable, or capture the computation with a function. Unfortunately neither of these approaches work here and we need a new mechanism: **reactive expressions**.
+
+You create a reactive expression by wrapping a block of code in `reactive({...})` and assigning it to a variable, and you use a reactive expression by calling it like a function.
+
 ## Summary
 
+Now is a great time to grab a copy of the [Shiny cheatsheet](https://github.com/rstudio/cheatsheets/blob/cd775237fd6de08df51e69941fe01967ecd9bdc2/shiny.pdf).
+
 ## Exercises
+
+In Exercises Folder.
