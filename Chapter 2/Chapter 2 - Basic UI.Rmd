@@ -80,11 +80,37 @@ Nao Xiao maintains a list.
 
 ## Outputs
 
+Outputs in the UI create placeholders that are later filled by the server function.
+
+Each `output` function on the front end is coupled with a `render` function in the back end.
+
 ### Text
+
+-   `textOutput()` usually combined with `renderText()`
+
+-   `verbatimTextOutput()` usually combined with `render`Prin`t()`
+
+-   `renderText()` is equivalent to `cat()` & `renderPrint()` is equivalent to `print()`
+
+-   Note that the [`{}`](https://rdrr.io/r/base/Paren.html) are only required in render functions if you need to run multiple lines of code.
 
 ### Tables
 
+-   `tableOutput()` and `renderTable()` : static
+
+-   `dataTableOutput()` and `renderDataTable()` : dynamic
+
+### Plots
+
+-   `plotOutput()` and `renderPlot()`
+
+-   Recommended to use `res=96`
+
 ### Downloads
+
+-   `downloadButton()` and `downloadLink()`
+
+-   more advanced - ch9
 
 ### Exercises
 
