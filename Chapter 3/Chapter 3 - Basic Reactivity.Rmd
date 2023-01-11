@@ -1,0 +1,41 @@
+# Chapter 3: Basic Reactivity
+
+## Introduction
+
+-   The key idea of reactive programming is to specify a graph of dependencies so that when an input changes, all related outputs are automatically updated.
+
+## The Server Function
+
+-   The `server` is more complicated because every user needs to get an independent version of the app; when user A moves a slider, user B shouldn't see their outputs change.
+
+-   Shiny invokes your `server()` function each time a new session starts.
+
+Server functions take three parameters: `input`, `output`, and `session`.
+
+### Input
+
+-   Unlike a typical list, input objects are read only.
+
+-   You cannot update them within R
+
+-   To read from an `input`, you must be in a **reactive context** created by a function like [`renderText()`](https://rdrr.io/pkg/shiny/man/renderPrint.html) or [`reactive()`](https://rdrr.io/pkg/shiny/man/reactive.html).
+
+### Output
+
+-   Also a list--like object
+
+-   You always need to use it with a `render` function
+
+-   The output ID is used with quotations "quoted" in the ui but not in the server
+
+-   You'll get an error if you forget the `render` function or attempt to read from an output
+
+## Reactive Programming
+
+-   Reactivity means that outputs automatically update as inputs change
+
+-   The app works because the code doesn't *tell* Shiny to create the string and send it to the browser but instead informs *how* *it could* create the string if it needs to.
+
+### Imperative Versus Declarative Programming
+
+-   
