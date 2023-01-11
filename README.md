@@ -7,7 +7,7 @@ Finished dates below:
 
 **Chapter 1 :** Jan 3 2023 
 
-**Chapter 2 :**
+**Chapter 2 :** Jan 4 2023
 
 **Chapter 3 :**
 
