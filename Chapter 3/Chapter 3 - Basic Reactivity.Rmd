@@ -48,7 +48,7 @@ Server functions take three parameters: `input`, `output`, and `session`.
 
 -   Shiny doesn't update the output if you can't see it in the browser.
 
--   If you\'re working on a Shiny app and you just can\'t figure out why your code never gets run, double check that your UI and server functions are using the same identifiers.
+-   If you're working on a Shiny app and you just can't figure out why your code never gets run, double check that your UI and server functions are using the same identifiers.
 
 ### The Reactive Graph
 
