@@ -73,3 +73,11 @@ Server functions take three parameters: `input`, `output`, and `session`.
 -   The order in which reactive code is run is determined only by the reactive graph, not by its layout in the server function.
 
 ### Exercises
+
+## Reactive expressions
+
+-   Input : Producers
+
+-   Outputs: Consumers
+
+-   Inputs and expressions are reactive producers; expressions and outputs are reactive consumers
